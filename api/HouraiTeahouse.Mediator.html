@@ -1,0 +1,773 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Mediator
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Mediator
+   ">
+    <meta name="generator" content="docfx 2.31.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="HouraiTeahouse.Mediator">
+  
+  
+  <h1 id="HouraiTeahouse_Mediator" data-uid="HouraiTeahouse.Mediator" class="text-break">Class Mediator
+  </h1>
+  <div class="markdown level0 summary"><p>A generalized object that encapsulates the interactions between multiple objects. 
+Meant to be used as either local or global event managers. </p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Mediator</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="HouraiTeahouse.html">HouraiTeahouse</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="HouraiTeahouse_Mediator_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Mediator</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="HouraiTeahouse_Mediator__ctor_" data-uid="HouraiTeahouse.Mediator.#ctor*"></a>
+  <h4 id="HouraiTeahouse_Mediator__ctor" data-uid="HouraiTeahouse.Mediator.#ctor">Mediator()</h4>
+  <div class="markdown level1 summary"><p>Initializes an instance of Mediator </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Mediator()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="HouraiTeahouse_Mediator_Global" data-uid="HouraiTeahouse.Mediator.Global">Global</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Mediator Global</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HouraiTeahouse.Mediator.html">Mediator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="HouraiTeahouse_Mediator_GetCount_" data-uid="HouraiTeahouse.Mediator.GetCount*"></a>
+  <h4 id="HouraiTeahouse_Mediator_GetCount_System_Type_" data-uid="HouraiTeahouse.Mediator.GetCount(System.Type)">GetCount(Type)</h4>
+  <div class="markdown level1 summary"><p>Gets the count of subscribers to certain type of event. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetCount(Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>the type of event to check for. </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>how many subscribers said event has </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HouraiTeahouse_Mediator_GetCount_" data-uid="HouraiTeahouse.Mediator.GetCount*"></a>
+  <h4 id="HouraiTeahouse_Mediator_GetCount__1" data-uid="HouraiTeahouse.Mediator.GetCount``1">GetCount&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Gets the count of subscribers to certain type of event. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetCount&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>how many subscribers said event has. </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>the type of event to check for. </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HouraiTeahouse_Mediator_Publish_" data-uid="HouraiTeahouse.Mediator.Publish*"></a>
+  <h4 id="HouraiTeahouse_Mediator_Publish__1___0_" data-uid="HouraiTeahouse.Mediator.Publish``1(``0)">Publish&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"><p>Publishes a new event. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Publish&lt;T&gt;(T evnt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">evnt</span></td>
+        <td><p>the event object </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="HouraiTeahouse_Mediator_Publish__1___0__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Execution is immediate. All handler code will be executed before returning from this method. 
+The event object may be mutated. The object may be altered after execution. </p>
+<p>Any asynchronous callbacks will not be awaited. To await the completion of all 
+callbacks, use PublishAsync instead.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">callback</code> is null </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HouraiTeahouse_Mediator_PublishAsync_" data-uid="HouraiTeahouse.Mediator.PublishAsync*"></a>
+  <h4 id="HouraiTeahouse_Mediator_PublishAsync__1___0_" data-uid="HouraiTeahouse.Mediator.PublishAsync``1(``0)">PublishAsync&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"><p>Publishes a new event. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task PublishAsync&lt;T&gt;(T evnt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">evnt</span></td>
+        <td><p>the event object </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>a ITask that resolves only when all event handlers are finished executing</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="HouraiTeahouse_Mediator_PublishAsync__1___0__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Execution is immediate. All handler code will be executed before returning from this method. 
+The event object may be mutated. The object may be altered after execution. </p>
+<p>All synchronous callbacks will be waited on to complete.
+Returned task will resolve only when all event handlers are resulved.
+To avoid awaiting asynchronous callbacks, use Publish instead.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">callback</code> is null </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HouraiTeahouse_Mediator_Reset_" data-uid="HouraiTeahouse.Mediator.Reset*"></a>
+  <h4 id="HouraiTeahouse_Mediator_Reset_System_Type_" data-uid="HouraiTeahouse.Mediator.Reset(System.Type)">Reset(Type)</h4>
+  <div class="markdown level1 summary"><p>Removes all subscribers from a single event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Reset(Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>the type of event to remove </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>whether it was removed or not </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">type</code> is null </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HouraiTeahouse_Mediator_Reset_" data-uid="HouraiTeahouse.Mediator.Reset*"></a>
+  <h4 id="HouraiTeahouse_Mediator_Reset__1" data-uid="HouraiTeahouse.Mediator.Reset``1">Reset&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Removes all subscribers from a single event. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Reset&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>whether it was removed or not </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>the type of event to remove </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HouraiTeahouse_Mediator_ResetAll_" data-uid="HouraiTeahouse.Mediator.ResetAll*"></a>
+  <h4 id="HouraiTeahouse_Mediator_ResetAll" data-uid="HouraiTeahouse.Mediator.ResetAll">ResetAll()</h4>
+  <div class="markdown level1 summary"><p>Removes all subscribers from all events. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ResetAll()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>whether any events were removed </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HouraiTeahouse_Mediator_Subscribe_" data-uid="HouraiTeahouse.Mediator.Subscribe*"></a>
+  <h4 id="HouraiTeahouse_Mediator_Subscribe__1_HouraiTeahouse_Mediator_Event___0__" data-uid="HouraiTeahouse.Mediator.Subscribe``1(HouraiTeahouse.Mediator.Event{``0})">Subscribe&lt;T&gt;(Mediator.Event&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds a listener/handler for a specific event type. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Subscribe&lt;T&gt;(Mediator.Event&lt;T&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HouraiTeahouse.Mediator.Event-1.html">Mediator.Event</a>&lt;T&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>the handler to call when an event of type <code data-dev-comment-type="typeparamref" class="typeparamref">T</code> is published. </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>the type of event to listen for </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="HouraiTeahouse_Mediator_Subscribe__1_HouraiTeahouse_Mediator_Event___0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note: subscription is always O(n) where n is the number of subscribers to
+the given type.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">callback</code> is null </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HouraiTeahouse_Mediator_SubscribeAsync_" data-uid="HouraiTeahouse.Mediator.SubscribeAsync*"></a>
+  <h4 id="HouraiTeahouse_Mediator_SubscribeAsync__1_HouraiTeahouse_Mediator_AsyncEvent___0__" data-uid="HouraiTeahouse.Mediator.SubscribeAsync``1(HouraiTeahouse.Mediator.AsyncEvent{``0})">SubscribeAsync&lt;T&gt;(Mediator.AsyncEvent&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SubscribeAsync&lt;T&gt;(Mediator.AsyncEvent&lt;T&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HouraiTeahouse.Mediator.AsyncEvent-1.html">Mediator.AsyncEvent</a>&lt;T&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HouraiTeahouse_Mediator_Unsubscribe_" data-uid="HouraiTeahouse.Mediator.Unsubscribe*"></a>
+  <h4 id="HouraiTeahouse_Mediator_Unsubscribe__1_HouraiTeahouse_Mediator_AsyncEvent___0__" data-uid="HouraiTeahouse.Mediator.Unsubscribe``1(HouraiTeahouse.Mediator.AsyncEvent{``0})">Unsubscribe&lt;T&gt;(Mediator.AsyncEvent&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Unsubscribe&lt;T&gt;(Mediator.AsyncEvent&lt;T&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HouraiTeahouse.Mediator.AsyncEvent-1.html">Mediator.AsyncEvent</a>&lt;T&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HouraiTeahouse_Mediator_Unsubscribe_" data-uid="HouraiTeahouse.Mediator.Unsubscribe*"></a>
+  <h4 id="HouraiTeahouse_Mediator_Unsubscribe__1_HouraiTeahouse_Mediator_Event___0__" data-uid="HouraiTeahouse.Mediator.Unsubscribe``1(HouraiTeahouse.Mediator.Event{``0})">Unsubscribe&lt;T&gt;(Mediator.Event&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Removes a listener from a specfic event type. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Unsubscribe&lt;T&gt;(Mediator.Event&lt;T&gt; callback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HouraiTeahouse.Mediator.Event-1.html">Mediator.Event</a>&lt;T&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td><p>the handler to remove </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>the type of event to remove the handler from </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="HouraiTeahouse_Mediator_Unsubscribe__1_HouraiTeahouse_Mediator_Event___0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note: unsubscription is always O(n) where n is the number of subscribers to
+the given type.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">callback</code> is null </p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
